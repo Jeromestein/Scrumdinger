@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct DetailEditView: View {
+    
+    /**
+     data: DailyScrum.Data not data = DailyScrum.Data
+     */
+    @Binding var data: DailyScrum.Data
     /**
      Note
 
      Declare @State properties as private so they can be accessed only within the view in which you define them.
      */
-    @State private var data = DailyScrum.Data()
     @State private var newAttendeeName = ""
 
     
@@ -77,6 +81,6 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView()
+        DetailEditView(data: .constant(DailyScrum.sampleData[0].data))
     }
 }
