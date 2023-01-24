@@ -53,7 +53,7 @@ struct DetailView: View {
         }
         // Modality(?
         /**
-        The edit view is nearly complete, but the app can’t save changes.
+        The edit view is nearly complete,  but the app can’t save changes.
          */
         .sheet(isPresented: $isPresentingEditView) {
             NavigationView {

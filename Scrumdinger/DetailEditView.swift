@@ -36,12 +36,16 @@ struct DetailEditView: View {
                     Text("\(Int(data.lengthInMinutes)) minutes")
                         .accessibilityHidden(true)
                 }
+                ThemePicker(selection: $data.theme)
             }
             
             Section(header: Text("Attendees")) {
                 ForEach(data.attendees) { attendee in
                     Text(attendee.name)
                 }
+                /**
+                 The onDelete perform action pass IndexSet as an argument. This is the set of indices of items about to be deleted.
+                 */
                 .onDelete { indices in
                     data.attendees.remove(atOffsets: indices)
                 }
