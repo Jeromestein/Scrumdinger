@@ -17,6 +17,8 @@ struct ThemePicker: View {
                     .tag(theme)
             }
         }
+        // Change picker style to show the theme color
+        .pickerStyle(.navigationLink)
     }
 }
 
