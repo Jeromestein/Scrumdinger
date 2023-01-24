@@ -33,6 +33,22 @@ extension DailyScrum {
             self.name = name
         }
     }
+    /**
+     Assign default values to all properties.
+
+     If all properties have default values, the compiler creates an initializer that takes no arguments.
+     With this initializer, you can create a new instance by calling Data().
+     */
+    struct Data {
+        var title: String = ""
+        var attendees: [Attendee] = [ ]
+        var lengthInMinutes: Double = 5
+        var theme: Theme = .seafoam
+    }
+    
+    var data: Data {
+        Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+    }
 }
 
 extension DailyScrum {
