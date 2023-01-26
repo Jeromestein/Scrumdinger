@@ -1,6 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-*/
+//
+//  ScrumProgressViewStyle.swift
+//  Scrumdinger
+//
+//  Created by Jiayi on 1/24/23.
+//
 
 import SwiftUI
 
