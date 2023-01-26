@@ -14,7 +14,6 @@ struct DetailView: View {
     @State private var isPresentingEditView = false
     
     var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         List {
             Section(header: Text("Meeting Info")) {
                 NavigationLink(destination: MeetingView(scrum: $scrum)){

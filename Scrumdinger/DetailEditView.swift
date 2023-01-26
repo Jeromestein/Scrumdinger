@@ -21,15 +21,12 @@ struct DetailEditView: View {
 
     
     var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         Form {
             Section(header: Text("Meeting Info")) {
                 TextField("Title", text: $data.title)
                 HStack {
-                    Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {
+                    Slider(value: $data.lengthInMinutes, in: 1...30, step: 1) {
                         /**
-                         Note
-
                          The Text view won’t appear on screen, but VoiceOver uses it to identify the purpose of the slider.
                          */
                         Text("Length")
