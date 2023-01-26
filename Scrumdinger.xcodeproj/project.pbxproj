@@ -23,6 +23,7 @@
 		CC4DD7BE2981EDBB00511094 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4DD7BC2981EDBB00511094 /* AVPlayer+Ding.swift */; };
 		CC5FA5DE2982049A001D367E /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = CC5FA5DD2982049A001D367E /* ding.wav */; };
 		CC5FA5E02982052A001D367E /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5FA5DF2982052A001D367E /* ScrumProgressViewStyle.swift */; };
+		CC5FA5E2298219BC001D367E /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5FA5E1298219BC001D367E /* History.swift */; };
 		CC76AE312980437B00F5A1B9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76AE302980437B00F5A1B9 /* DetailView.swift */; };
 		CC76AE332980804D00F5A1B9 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76AE322980804D00F5A1B9 /* DetailEditView.swift */; };
 		CC76AE3529808E2A00F5A1B9 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76AE3429808E2A00F5A1B9 /* ThemeView.swift */; };
@@ -69,6 +70,7 @@
 		CC4DD7C12981EDD400511094 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		CC5FA5DD2982049A001D367E /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		CC5FA5DF2982052A001D367E /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
+		CC5FA5E1298219BC001D367E /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		CC76AE302980437B00F5A1B9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CC76AE322980804D00F5A1B9 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		CC76AE3429808E2A00F5A1B9 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				CC4DD7BB2981EDBB00511094 /* ScrumTimer.swift */,
 				CC1CE45C297F389B001E5001 /* Theme.swift */,
 				CC1CE45E297F3998001E5001 /* DailyScrum.swift */,
+				CC5FA5E1298219BC001D367E /* History.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5FA5E2298219BC001D367E /* History.swift in Sources */,
 				CC76AE3729808EF600F5A1B9 /* ThemePicker.swift in Sources */,
 				CC5FA5E02982052A001D367E /* ScrumProgressViewStyle.swift in Sources */,
 				CC1CE45D297F389B001E5001 /* Theme.swift in Sources */,
@@ -495,8 +499,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
+				DEVELOPMENT_TEAM = R4SD5CBXFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -523,8 +529,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
+				DEVELOPMENT_TEAM = R4SD5CBXFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
