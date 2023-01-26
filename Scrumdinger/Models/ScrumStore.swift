@@ -20,6 +20,23 @@ class ScrumStore: ObservableObject {
     }
     
     /**
+     Swift 5.5 introduces a new suite of concurrency features, including async/await and structured concurrency. The load and save methods that you wrote in Persisting data are asynchronous, but they’re incompatible with the new async/await pattern.
+     https://developer.apple.com/tutorials/app-dev-training/adopting-swift-concurrency
+     */
+    static func load() async throws -> [DailyScrum] {
+        try await withCheckedThrowingContinuation { continuation in
+            load { result in
+                switch result {
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                case .success(let scrums):
+                    continuation.resume(returning: scrums)
+                }
+            }
+        }
+    }
+    
+    /**
      Result is a single type that represents the outcome of an operation, whether it’s a success or failure. The load function accepts a completion closure that it calls asynchronously with either an array of scrums or an error.
      */
     static func load(completion: @escaping (Result<[DailyScrum], Error>)->Void) {
@@ -43,6 +60,23 @@ class ScrumStore: ObservableObject {
             } catch {
                 DispatchQueue.main.async {
                     completion(.failure(error))
+                }
+            }
+        }
+    }
+    
+    /**
+     The @discardableResult attribute disables warnings about the unused return value.
+     */
+    @discardableResult
+    static func save(scrums: [DailyScrum]) async throws -> Int {
+        try await withCheckedThrowingContinuation { continuation in
+            save(scrums: scrums) { result in
+                switch result {
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                case .success(let scrumsSaved):
+                    continuation.resume(returning: scrumsSaved)
                 }
             }
         }
