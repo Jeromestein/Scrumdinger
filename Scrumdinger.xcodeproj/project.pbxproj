@@ -30,6 +30,7 @@
 		CC76AE3729808EF600F5A1B9 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76AE3629808EF600F5A1B9 /* ThemePicker.swift */; };
 		CC76AE702980D9C700F5A1B9 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76AE6F2980D9C700F5A1B9 /* MeetingHeaderView.swift */; };
 		CC76AE782981DB8A00F5A1B9 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76AE772981DB8A00F5A1B9 /* MeetingFooterView.swift */; };
+		CC9133782982C93400F449C4 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9133772982C93400F449C4 /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		CC76AE3629808EF600F5A1B9 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		CC76AE6F2980D9C700F5A1B9 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		CC76AE772981DB8A00F5A1B9 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		CC9133772982C93400F449C4 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				CC1CE45C297F389B001E5001 /* Theme.swift */,
 				CC1CE45E297F3998001E5001 /* DailyScrum.swift */,
 				CC5FA5E1298219BC001D367E /* History.swift */,
+				CC9133772982C93400F449C4 /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				CC76AE3729808EF600F5A1B9 /* ThemePicker.swift in Sources */,
 				CC5FA5E02982052A001D367E /* ScrumProgressViewStyle.swift in Sources */,
 				CC1CE45D297F389B001E5001 /* Theme.swift in Sources */,
+				CC9133782982C93400F449C4 /* ScrumStore.swift in Sources */,
 				CC76AE312980437B00F5A1B9 /* DetailView.swift in Sources */,
 				CC76AE702980D9C700F5A1B9 /* MeetingHeaderView.swift in Sources */,
 				CC76AE782981DB8A00F5A1B9 /* MeetingFooterView.swift in Sources */,
