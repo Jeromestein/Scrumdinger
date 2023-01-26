@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    
     /**
      data: DailyScrum.Data not data = DailyScrum.Data
      */
